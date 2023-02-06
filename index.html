@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keyword" content="Bookshelf Apps" />
+    <meta
+      name="description"
+      content="Bookshelf Apps to list book, can add book in read list or unread list"
+    />
+    <meta name="author" content="Abastian Dwi Saputra" />
+    <title>Bookshelf Apps</title>
+    <!-- icon -->
+    <link rel="icon" href="./assets/images/icon.png" />
+    <!-- end icon -->
+    <!-- custom css -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- end custom css -->
+  </head>
+  <body>
+    <!-- start container -->
+    <div class="container">
+      <!-- start header -->
+      <header>
+        <h1>BOOKSHELF APPS</h1>
+      </header>
+      <!-- end header -->
+      <!-- start main -->
+      <main>
+        <section class="input_section">
+          <h2>Masukkan Data Buku</h2>
+          <form id="inputBook">
+            <div class="input">
+              <label for="inputJudul">Judul :</label>
+              <input
+                type="text"
+                id="inputJudul"
+                placeholder="Masukkan judul buku"
+                required
+              />
+            </div>
+            <div class="input">
+              <label for="inputPenulis">Penulis :</label>
+              <input
+                type="text"
+                id="inputPenulis"
+                placeholder="Masukkan penulis buku"
+                required
+              />
+            </div>
+            <div class="input">
+              <label for="inputTahun">Tahun :</label>
+              <input
+                type="number"
+                id="inputTahun"
+                placeholder="Masukkan tahun buku"
+                required
+              />
+            </div>
+            <div class="input_checked">
+              <label for="inputChecked">Selesai dibaca</label>
+              <input type="checkbox" id="inputChecked" />
+            </div>
+            <div class="input_button">
+              <button id="inputSubmit" type="submit">
+                Masukkan buku ke rak
+                <span>belum selesai dibaca</span>
+              </button>
+            </div>
+          </form>
+        </section>
+        <section class="search_section">
+          <h2>Cari Judul Buku</h2>
+          <form id="inputSearch">
+            <label for="searchTitle">Judul</label>
+            <input
+              type="text"
+              id="searchTitle"
+              placeholder="Masukkan judul yang dicari"
+            />
+            <button id="searchSubmit" type="submit">Cari</button>
+          </form>
+        </section>
+        <section class="bookshelf_section">
+          <h2>Buku Belum Dibaca</h2>
+          <div id="bukuBelumDibaca" class="book_list"></div>
+        </section>
+        <section class="bookshelf_section">
+          <h2>Buku Selesai Dibaca</h2>
+          <div id="bukuSelesaiDibaca" class="book_list"></div>
+        </section>
+      </main>
+      <!-- end main -->
+      <!-- start footer -->
+      <footer>
+        <p>Copyright &copy; 2022 Abastian Dwi Saputra. All Right Reserved.</p>
+      </footer>
+      <!-- end footer -->
+      <!-- start dialog -->
+      <div class="dialog">
+        <div class="dialog-item">
+          <p>Apakah Anda ingin menghapus buku ?</p>
+          <form class="dialog-button">
+            <button type="submit" class="dialog-red">Hapus</button>
+            <button type="submit" class="dialog-green">Kembali</button>
+          </form>
+        </div>
+      </div>
+      <!-- end dialog -->
+    </div>
+    <!-- end container -->
+    <!-- custom javascript -->
+    <script src="./assets/js/script.js"></script>
+    <!-- end custom javascript -->
+  </body>
+</html>
